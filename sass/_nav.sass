@@ -1,21 +1,65 @@
-h1
-  color: #0F37A8
-  text-transform: uppercase
-  font-family: 'Open Sans'
+
 
 nav
-  position: fixed
+  display: none
   top: 0px
   right: 80px
-  padding: 25px 15px
+  padding: 25px 0
   ul
     list-style-type: none
     li
-      display: inline-block
+      text-align: center
+      letter-spacing: 1px
+      width: 100%
       text-transform: uppercase
-      padding: 0 20px
+      padding: 5px 0
+      cursor: pointer
+      background-color: #E8770C
       a
         font-family: 'Roboto'
         text-decoration: none
-        color: #0F37A8
-        font-size: 20px
+        color: #fff
+        font-size: 18px
+        line-height: 35px
+
+nav.active
+  display: block
+div.logo
+  width: 100vw
+  text-align: center
+  img
+    width: 180px
+    padding: 2vw
+h1.nameCompany
+  position: relative
+  left: 0
+  top: -15px
+  text-align: center
+  letter-spacing: 5px
+  color: #0F37A8
+  text-transform: uppercase
+  font-family: 'Open Sans'
+  font-size: 1em
+h1.nameCompany::after
+  position: absolute
+  left: calc(50vw - 90px)
+  top: 27px
+  content: ''
+  width: 180px
+  height: 1.4px
+  background-color: #0f37a8
+
+div.burger
+  i
+    position: fixed
+    top: 15px
+    right: 15px
+    font-size: 2rem
+    color: #0F37A8
+  
+  
+      
+      
+        
+     
+        
