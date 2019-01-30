@@ -1,13 +1,16 @@
 
 
 nav
+  position: fixed
   display: none
-  top: 0px
-  right: 80px
+  top: 80px
+  right: 0px
   padding: 25px 0
+  width: 100%
+  z-index: 2
   ul
     list-style-type: none
-    li
+    li     
       text-align: center
       letter-spacing: 1px
       width: 100%
@@ -15,25 +18,31 @@ nav
       padding: 5px 0
       cursor: pointer
       background-color: #E8770C
+      border-bottom: 1px dotted #fff
       a
+        display: block
         font-family: 'Roboto'
         text-decoration: none
         color: #fff
         font-size: 18px
         line-height: 35px
+        
+    li:last-child
+      border-bottom: 0px;
 
 nav.active
   display: block
 div.logo
   width: 100vw
   text-align: center
+  
   img
-    width: 180px
+    width: 160px
     padding: 2vw
 h1.nameCompany
   position: relative
   left: 0
-  top: -15px
+  top: -1px
   text-align: center
   letter-spacing: 5px
   color: #0F37A8
@@ -42,11 +51,19 @@ h1.nameCompany
   font-size: 1em
 h1.nameCompany::after
   position: absolute
-  left: calc(50vw - 90px)
-  top: 27px
+  left: calc(50vw - 80px)
+  top: 0px
   content: ''
-  width: 180px
-  height: 1.4px
+  width: 160px
+  height: 1px
+  background-color: #0f37a8
+h1.nameCompany::before
+  position: absolute
+  left: calc(50vw - 80px)
+  top: 20px
+  content: ''
+  width: 160px
+  height: 1px
   background-color: #0f37a8
 
 div.burger
@@ -56,7 +73,31 @@ div.burger
     right: 15px
     font-size: 2rem
     color: #0F37A8
-  
+    background-color: #fff
+    padding: 5px 7px
+    z-index: 1
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+
+@media (min-width: 768px)
+  div.logo
+    min-height: 150px;
+    img
+      width: 200px
+      position: fixed
+      left: 5px
+      top: 0
+
+  h1.nameCompany::after 
+    top: 25px
+    left: 0px
+    width: 160px
+
+  h1.nameCompany
+    position: fixed
+    left: 27px
+    top: 92px
+
+
   
       
       
