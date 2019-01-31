@@ -125,7 +125,7 @@ div.burger i {
 }
 
 .hero img {
-  width: 60vh;
+  width: 55vh;
   height: 35vh;
 }
 
@@ -176,6 +176,56 @@ div.burger i {
 
 .company .more_1, .company .more_2, .company .more_3 {
   display: none;
+}
+
+section.contact {
+  text-align: center;
+}
+
+section.contact form, section.contact textarea {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+section.contact form input, section.contact textarea input {
+  width: 80vw;
+  margin: 10px 0;
+  line-height: 25px;
+}
+
+section.contact h3 {
+  padding: 20px 0 10px 0;
+  color: #E8770C;
+}
+
+section.contact h3 .input_form {
+  width: 80vw;
+}
+
+section.contact div.map {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+footer {
+  position: relative;
+  background-color: #252726;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0 15px 0;
+  color: white;
+}
+
+footer div.ads_container {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+footer div.ads_container a.ads {
+  font-size: 10px;
+  color: #fff;
 }
 
 * {
